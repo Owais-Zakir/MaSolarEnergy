@@ -16,13 +16,8 @@
       Your browser does not support the video tag.
     </video>
 
-    <header>
-      <h1 class="logo">MA Solar Energy</h1>
-      <!-- <button class="button is-text" id="menu-button" onclick="buttonToggle()">
-        <div class="button-inner-wrapper">
-          <span class="icon menu-icon"></span>
-        </div>
-      </button> -->
+    <header id="header">
+      <h1 class="logo">MA <span>Solar</span> Energy</h1>
       <button class="button is-text" id="menu-button" onclick="buttonToggle()">
         <div class="button-inner-wrapper">
           <i class="ri-more-2-fill menu-icon"></i>
@@ -39,33 +34,37 @@
     <section id="banner">
       <div class="contain">
         <!-- <h1> The Leader in Solar Installations!</h1> -->
-        <h1>Hi I'm "<span>Zakir Aleem</span>"</h1>
-        <h2>A "<span id="autoTyped"></span>"</h2>
-        <p>
+        <h1 id="mainHeadingOne">Hi I'm "<span>Zakir Aleem</span>"</h1>
+        <h2 id="mainHeadingTwo">A "<span id="autoTyped"></span>"</h2>
+        <p id="mainPara">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a
           dolore ab aspernatur labore possimus nemo, nisi voluptas voluptatem
           doloribus, quia alias.
         </p>
-        <h3>Connect Us</h3>
+        <h3 id="share">Connect Us</h3>
         <div class="icons">
           <a
             href="https://api.whatsapp.com/send/?phone=%2B923462505849&text&type=phone_number&app_absent=0"
-            class="shareIcons"
+            class="shareIcons iconOne"
           >
             <i class="ri-whatsapp-fill rounded"></i>
           </a>
-          <a href="tel:+923132532601" class="shareIcons">
+          <a href="tel:+923132532601" class="shareIcons iconTwo">
             <i class="ri-contacts-fill rounded"></i>
           </a>
           <a
             href="https://web.facebook.com/people/Owais-Ali/pfbid025ekdzD8xrYvi2vPH52XjMZSZeXif4XYNSRxiWyufhjSXShd37yCq85s8qVAtMg1vl/"
-            class="shareIcons"
+            class="shareIcons iconThree"
           >
             <i class="ri-facebook-fill rounded"></i>
           </a>
-          <a href="#" class="shareIcons">
+          <a href="#" class="shareIcons iconFour">
             <i class="ri-mail-fill rounded"></i>
           </a>
+          <a href="#" id="shareBtn" class="shareIcons iconFive">
+            <i class="ri-share-fill rounded"></i>
+          </a>
+
           <!-- <i class="ri-contacts-fill rounded"></i> -->
         </div>
       </div>
@@ -74,7 +73,9 @@
       <p>&copy; 2024 MA Solar Energy. All rights reserved.</p>
     </div>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="./js/gsap.js"></script>
     <script src="./js/app.js"></script>
+  
   </body>
 </html>
