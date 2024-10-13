@@ -1,6 +1,4 @@
 let tl = gsap.timeline();
-let tlTwo = gsap.timeline();
-let tlThree = gsap.timeline();
 
 tl.to("#header", {
   translateY: "0%",
@@ -8,87 +6,79 @@ tl.to("#header", {
   ease: "sine.out",
   duration: 0.5,
 });
-tl.to("#menu-button", {
-  translateX: "0%",
-  opacity: 1,
-  ease: "bounce.in",
-  duration: 0.8,
-}),
-  "headerLogo";
 tl.to(".logo", {
   translateX: "0%",
   opacity: 1,
-  ease: "bounce.in",
+  ease: "power1.in",
   duration: 0.2,
 }),
   "headerLogo";
+tl.to("#menu-button", {
+  translateX: "0%",
+  opacity: 1,
+  ease: "power1.in",
+  duration: 0.8,
+}),
+  "headerLogo";
 
-tlTwo.to(
+tl.to(
   "#mainHeadingOne",
   {
     translateX: "0%",
     opacity: 1,
-    duration: 1,
+    duration: .7,
     ease: "back.in(1.7)",
   },
   "mainHead"
 );
-tlTwo.to(
+tl.to(
   "#mainHeadingTwo",
   {
     translateX: "0%",
     opacity: 1,
     ease: "back.in(1.7)",
-    duration: 1.1,
+    duration: .8,
   },
   "mainHead"
 );
-tlTwo.to(
+tl.to(
   "#mainPara",
   {
     translateX: "0%",
     opacity: 1,
     ease: "back.in(1.7)",
-    duration: 1.2,
+    duration: .9,
   },
   "mainHead"
 );
 
-
-
-tlThree.to("#share",{
-    translateX: "0%",
-    opacity:1,
-    ease: "elastic.in(1,0.8)",
-    duration:1.2
-})
-tlThree.to(".iconOne",{
-    translateX: "0%",
-    opacity:1,
-    ease: "elastic.in(1,0.3)",
-    duration:.5
-})
-tlThree.to(".iconTwo",{
-    translateX: "0%",
-    opacity:1,
-    ease: "elastic.in(1,0.3)",
-    duration:.2
-})
-tlThree.to(".iconThree",{
-    translateX: "0%",
-    opacity:1,
-    ease: "elastic.in(1,0.3)",
-    duration:.2
-})
-tlThree.to(".iconFour",{
-    translateX: "0%",
-    opacity:1,
-    ease: "elastic.in(1,0.3)",
-    duration:.2
-})
-tlThree.to(".iconFive",{
-    translateX: "0%",
-    opacity:1,
-    ease: "elastic.in(1,0.3)",
-    duration:.2
-})
+tl.to("#share", {
+  translateX: "0%",
+  opacity: 1,
+  ease: "elastic.in(1,0.8)",
+  duration: .7,
+});
+tl.to(".iconOne", {
+  translateX: "0%",
+  opacity: 1,
+  ease: "elastic.in(1,0.3)",
+  duration: 0.5,
+});
+tl.to(".iconTwo", {
+  translateX: "0%",
+  opacity: 1,
+  ease: "elastic.in(1,0.3)",
+  duration: 0.2,
+});
+tl.to(".iconThree", {
+  translateX: "0%",
+  opacity: 1,
+  ease: "elastic.in(1,0.3)",
+  duration: 0.2,
+});
+tl.to(".iconFour", {
+  translateX: "0%",
+  opacity: 1,
+  ease: "elastic.in(1,0.3)",
+  duration: 0.2,
+});

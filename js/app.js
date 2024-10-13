@@ -46,8 +46,8 @@ type();
 document.getElementById('shareBtn').onclick = function() {
   if (navigator.share) {
       navigator.share({
-          title: 'Your Website Title',
-          text: 'Check out this amazing website!',
+          title: 'MA Solar Energy',
+          text: 'Check out My Website',
           url: 'https://owais-zakir.github.io/MaSolarEnergy/'
       })
       .then(() => console.log('Share successful!'))
