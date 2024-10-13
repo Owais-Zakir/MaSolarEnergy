@@ -1,5 +1,4 @@
 let tl = gsap.timeline();
-
 tl.to("#header", {
   translateY: "0%",
   opacity: 1,
@@ -20,7 +19,6 @@ tl.to("#menu-button", {
   duration: 0.8,
 }),
   "headerLogo";
-
 tl.to(
   "#mainHeadingOne",
   {
@@ -51,7 +49,6 @@ tl.to(
   },
   "mainHead"
 );
-
 tl.to("#share", {
   translateX: "0%",
   opacity: 1,

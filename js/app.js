@@ -10,8 +10,6 @@ let buttonToggle = () => {
   }
   header.classList.toggle("active");
 };
-// +++++++++++++++++++++++ Button Done ++++++++++++++++++++
-// ================ Auto Typing Effect =====================
 const texts = ["Ac Electrician", "Dc Electrician"];
 const typingElement = document.getElementById("autoTyped");
 let index = 0;
@@ -40,9 +38,6 @@ function deleteText() {
   }
 }
 type();
-
-
-
 document.getElementById('shareBtn').onclick = function() {
   if (navigator.share) {
       navigator.share({
@@ -53,7 +48,6 @@ document.getElementById('shareBtn').onclick = function() {
       .then(() => console.log('Share successful!'))
       .catch((error) => console.error('Error sharing:', error));
   } else {
-      // Fallback for unsupported browsers
       alert('Sharing not supported on this browser. Please copy the link: https://owais-zakir.github.io/MaSolarEnergy/');
   }
 };
